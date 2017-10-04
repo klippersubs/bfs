@@ -1,6 +1,6 @@
 {
     "name": "@klippersubs/bfs",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "General purpose BFS implementation.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [
@@ -23,7 +23,7 @@
         "build": "babel ./source/index.js --out-file ./build/index.js --source-maps",
         "prepublish": "yarn run build",
         "postpublish": "yarn run clean",
-        "lint": "eslint ./source/**/*.{js,jsx}",
+        "lint": "eslint ./source/**/*.js",
         "test": "jest"
     },
     "devDependencies": {
