@@ -1,5 +1,5 @@
 /**
- * @file BFS implementation for cyclic graphs without coloring.
+ * @file General purpose BFS implementation.
  * @author Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
  * @license MIT
  * @copyright KlipperSubs, 2017

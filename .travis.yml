@@ -1,4 +1,4 @@
-# BFS implementation for cyclic graphs without coloring. (Travis config file.)
+# General purpose BFS implementation. (Travis config file.)
 # Author: Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
 # License: MIT
 # Copyright: KlipperSubs, 2017

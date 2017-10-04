@@ -1,12 +1,14 @@
 {
     "name": "@klippersubs/bfs",
     "version": "1.0.2",
-    "description": "BFS implementation for cyclic graphs without coloring.",
+    "description": "General purpose BFS implementation.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [
+        "bfs-algorithm",
+        "graph-algorithms",
         "bfs",
         "search",
-        "forest"
+        "flatten"
     ],
     "main": "build/index.js",
     "repository": "klippersubs/bfs",
