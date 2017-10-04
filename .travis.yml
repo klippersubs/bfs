@@ -1,0 +1,20 @@
+# BFS implementation without coloring for directed graphs and forests. (Travis config file.)
+# Author: Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
+# License: MIT
+# Copyright: KlipperSubs, 2017
+
+language: node_js
+
+node_js:
+  - "8"
+
+sudo: false
+
+cache:
+    yarn: true
+    directories:
+      - "node_modules"
+
+script:
+  - yarn run lint
+  - yarn run test

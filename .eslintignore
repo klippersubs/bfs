@@ -1,0 +1,7 @@
+# BFS implementation without coloring for directed graphs and forests. (ESLint ignore file.)
+# Author: Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
+# License: MIT
+# Copyright: KlipperSubs, 2017
+
+!.eslintrc.js
+build/

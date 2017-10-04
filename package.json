@@ -1,0 +1,41 @@
+{
+    "name": "@klippersubs/bfs",
+    "version": "1.0.1",
+    "description": "BFS implementation without coloring for directed graphs and forests.",
+    "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
+    "keywords": [
+        "bfs",
+        "search",
+        "forest"
+    ],
+    "main": "build/index.js",
+    "repository": "klippersubs/bfs",
+    "bugs": {
+        "url": "https://github.com/klippersubs/bfs/issues",
+        "email": "aliceklipper@yandex.com"
+    },
+    "license": "MIT",
+    "scripts": {
+        "clean": "rm -rf ./build && mkdir build",
+        "prebuild": "yarn run clean",
+        "build": "babel ./source/index.js --out-file ./build/index.js --source-maps",
+        "prepublish": "yarn run build",
+        "postpublish": "yarn run clean",
+        "lint": "eslint ./source/**/*.{js,jsx}",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-eslint": "^7.2.3",
+        "babel-jest": "^20.0.3",
+        "babel-preset-env": "^1.5.2",
+        "babel-preset-flow": "^6.23.0",
+        "eslint": "^3.19.0",
+        "eslint-config-google": "^0.8.0",
+        "eslint-config-prettier": "^2.1.1",
+        "eslint-plugin-flowtype": "^2.34.0",
+        "eslint-plugin-prettier": "^2.1.1",
+        "jest": "^20.0.4",
+        "prettier": "^1.4.4"
+    }
+}

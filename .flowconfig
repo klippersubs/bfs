@@ -1,0 +1,9 @@
+# BFS implementation without coloring for directed graphs and forests. (Flow config file.)
+# Author: Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
+# License: MIT
+# Copyright: KlipperSubs, 2017
+
+[ignore]
+<PROJECT_ROOT>/build/.*
+
+[options]

@@ -1,0 +1,41 @@
+# BFS implementation without coloring for directed graphs and forests. (npm ignore file.)
+# Author: Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
+# License: MIT
+# Copyright: KlipperSubs, 2017
+
+###############
+## IDE stuff ##
+###############
+
+# IDEA
+.idea/
+*.iml
+
+#####################
+## Ecosystem stuff ##
+#####################
+
+# Yarn
+yarn.lock
+
+# ESLint
+.eslintignore
+.eslintrc.js
+
+# Babel
+.babelrc
+
+# Flow
+.flowconfig
+
+# Travis
+.travis.yml
+
+# Git
+.gitignore
+
+##################
+## Poject stuff ##
+##################
+
+source/
