@@ -1,7 +1,7 @@
 {
     "name": "@klippersubs/bfs",
     "version": "1.0.1",
-    "description": "BFS implementation without coloring for directed graphs and forests.",
+    "description": "BFS implementation for cyclic graphs without coloring.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [
         "bfs",

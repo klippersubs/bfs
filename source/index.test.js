@@ -1,5 +1,5 @@
 /**
- * @file BFS implementation without coloring for directed graphs and forests. (Tests.)
+ * @file BFS implementation for cyclic graphs without coloring. (Tests.)
  * @author Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
  * @license MIT
  * @copyright KlipperSubs, 2017

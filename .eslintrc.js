@@ -1,5 +1,5 @@
 /**
- * @file BFS implementation without coloring for directed graphs and forests. (ESLint config file.)
+ * @file BFS implementation for cyclic graphs without coloring. (ESLint config file.)
  * @author Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
  * @license MIT
  * @copyright KlipperSubs, 2017

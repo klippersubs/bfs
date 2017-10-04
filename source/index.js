@@ -1,5 +1,5 @@
 /**
- * @file Breadth-first flatten algorithm without coloring for directed graphs and forests.
+ * @file BFS implementation for cyclic graphs without coloring.
  * @author Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)
  * @license MIT
  * @copyright KlipperSubs, 2017
