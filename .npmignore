@@ -17,6 +17,7 @@
 
 # Yarn
 yarn.lock
+yarn-error.log
 
 # ESLint
 .eslintignore
