@@ -1,6 +1,6 @@
 {
     "name": "@klippersubs/bfs",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "General purpose BFS implementation.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [
@@ -11,6 +11,7 @@
         "flatten"
     ],
     "main": "build/index.js",
+    "module": "source/index.js",
     "repository": "klippersubs/bfs",
     "bugs": {
         "url": "https://github.com/klippersubs/bfs/issues",
