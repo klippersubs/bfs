@@ -72,9 +72,9 @@ Return value:
 
  *  `Set<Vertex>` — flat set of vertices.
 
-[ci]: https://travis-ci.org/klippersubs/bfs
-[npm]: https://www.npmjs.com/package/@klippersubs/bfs
-
 ## License
 
 MIT
+
+[ci]: https://travis-ci.org/klippersubs/bfs
+[npm]: https://www.npmjs.com/package/@klippersubs/bfs
