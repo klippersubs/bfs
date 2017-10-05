@@ -1,6 +1,6 @@
 {
     "name": "@klippersubs/bfs",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "General purpose BFS implementation.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [
@@ -39,6 +39,7 @@
         "eslint-config-prettier": "^2.6.0",
         "eslint-plugin-flowtype": "^2.37.0",
         "eslint-plugin-prettier": "^2.3.1",
+        "flow-bin": "^0.56.0",
         "jest": "^21.2.1",
         "prettier": "^1.7.4"
     }
