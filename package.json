@@ -1,6 +1,6 @@
 {
     "name": "@klippersubs/bfs",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "General purpose BFS implementation.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [
@@ -28,17 +28,18 @@
         "test": "jest"
     },
     "devDependencies": {
-        "babel-cli": "^6.24.1",
-        "babel-eslint": "^7.2.3",
-        "babel-jest": "^20.0.3",
-        "babel-preset-env": "^1.5.2",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^8.0.1",
+        "babel-jest": "^21.2.0",
+        "babel-preset-env": "^1.6.0",
         "babel-preset-flow": "^6.23.0",
-        "eslint": "^3.19.0",
-        "eslint-config-google": "^0.8.0",
-        "eslint-config-prettier": "^2.1.1",
-        "eslint-plugin-flowtype": "^2.34.0",
-        "eslint-plugin-prettier": "^2.1.1",
-        "jest": "^20.0.4",
-        "prettier": "^1.4.4"
+        "eslint": "^4.8.0",
+        "eslint-config-google": "^0.9.1",
+        "eslint-config-prettier": "^2.6.0",
+        "eslint-plugin-flowtype": "^2.37.0",
+        "eslint-plugin-prettier": "^2.3.1",
+        "jest": "^21.2.1",
+        "prettier": "^1.7.4"
     }
 }
