@@ -26,10 +26,10 @@ export const flatten = <Graph, Vertex>(graph: Graph, root: Vertex, getChildren: 
     const visited: Set<Vertex> = new Set(queue);
 
     do {
-        for (const node of getChildren(graph, queue.shift())) {
-            if (!visited.has(node)) {
-                visited.add(node);
-                queue.push(node);
+        for (const vertex of getChildren(graph, queue.shift())) {
+            if (!visited.has(vertex)) {
+                visited.add(vertex);
+                queue.push(vertex);
             }
         }
     } while (queue.length > 0);
