@@ -11,22 +11,23 @@
 
 import { flatten } from './index';
 
-describe('default test suite', () => {
+describe('`flatten` tests', () => {
     test('connected vertices should be flattened correctly', () => {
-        const graph = {
-            en: [],
-            ru: ['en'],
-            be: ['ru', 'uk'],
-            'be-tarask': ['be', 'uk'],
-            uk: ['be', 'ru'],
-        };
+        const en = { name: 'en', fallback: [] };
+        const ru = { name: 'ru', fallback: [en] };
+        const be = { name: 'be', fallback: [ru] };
+        const uk = { name: 'uk', fallback: [be, ru] };
 
-        const flat = flatten(graph, 'be-tarask', (graph, vertex) => graph[vertex] || []);
+        be.fallback = [ru, uk];
 
-        expect(flat).toEqual(new Set(['be-tarask', 'be', 'uk', 'ru', 'en']));
+        const beTarask = { name: 'be-tarask', fallback: [be, uk] };
+
+        const flat = flatten(null, beTarask, (_, vertex) => vertex.fallback);
+
+        expect(flat).toEqual(new Set([beTarask, be, uk, ru, en]));
     });
 
-    test('disconnected vertices should not be in included in resulting array', () => {
+    test('disconnected vertices should not be in included in resulting set', () => {
         const graph = {
             en: [],
             ja: ['en'],
