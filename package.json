@@ -1,6 +1,6 @@
 {
     "name": "@klippersubs/bfs",
-    "version": "1.0.3",
+    "version": "2.0.0",
     "description": "General purpose BFS implementation.",
     "author": "Alice Klipper <aliceklipper@yandex.com> (https://t.me/aliceklipper)",
     "keywords": [

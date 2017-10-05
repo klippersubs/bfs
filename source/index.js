@@ -21,7 +21,7 @@ export type ChildrenGetter<Graph, Vertex> = (graph: Graph, vertex: Vertex) => Ar
  * @param {ChildrenGetter<Graph, Vertex>} childrenGetter — returns children of the given vertex.
  * @return {Set<Vertex>} — flat set of vertices.
  */
-export default <Graph, Vertex>(graph: Graph, entry: Vertex, childrenGetter: ChildrenGetter<Graph, Vertex>) => {
+export const flatten = <Graph, Vertex>(graph: Graph, entry: Vertex, childrenGetter: ChildrenGetter<Graph, Vertex>) => {
     const queue: Array<Vertex> = [entry];
     const visited: Set<Vertex> = new Set(queue);
 

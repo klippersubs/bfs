@@ -9,7 +9,7 @@
  eslint-env jest
  */
 
-import walk from '.';
+import { flatten } from './index';
 
 describe('default test suite', () => {
     test('connected vertices should be flattened correctly', () => {
@@ -21,7 +21,7 @@ describe('default test suite', () => {
             uk: ['be', 'ru'],
         };
 
-        const flat = walk(graph, 'be-tarask', (graph, vertex) => graph[vertex] || []);
+        const flat = flatten(graph, 'be-tarask', (graph, vertex) => graph[vertex] || []);
 
         expect(flat).toEqual(new Set(['be-tarask', 'be', 'uk', 'ru', 'en']));
     });
@@ -33,7 +33,7 @@ describe('default test suite', () => {
             ru: ['en'],
         };
 
-        const flat = walk(graph, 'ja', (graph, vertex) => graph[vertex] || []);
+        const flat = flatten(graph, 'ja', (graph, vertex) => graph[vertex] || []);
 
         expect(flat).toEqual(new Set(['ja', 'en']));
     });

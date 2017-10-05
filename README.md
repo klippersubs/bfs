@@ -10,25 +10,26 @@ yarn add @klippersubs/bfs
 ````
 
 ````javascript
-import walk from '@klippersubs/bfs';
+import { flatten } from '@klippersubs/bfs';
 
-const languages = new Map([
-    ['en', { messages: EN_MESSAGES, fallback: [], },],
-    ['ru', { messages: RU_MESSAGES, fallback: ['en'], },],
-    ['be', { messages: BE_MESSAGES, fallback: ['ru', 'uk'], },],
-    ['be-tarask', { messages: BE_TARASK_MESSAGES, fallback: ['be', 'uk'], },],
-    ['uk', { messages: UK_MESSAGES, fallback: ['be', 'ru'], },],
-]);
+const en = { name: 'en', fallback: [] };
+const ru = { name: 'ru', fallback: [en] };
+const be = { name: 'be', fallback: [ru] };
+const uk = { name: 'uk', fallback: [be, ru] };
 
-const lookupList = walk(
-    languages,
-    'by-taras',
-    (languages, language) =>
-        (languages.get(language) ? languages.get(language).fallback : []),
-);
+be.fallback = [ru, uk];
+
+const beTarask = { name: 'be-tarask', fallback: [be, uk] };
+
+const lookupList = flatten(null, beTarask, (_, language) => language.fallback);
 
 console.log(lookupList);
-// → Set { 'be-tarask', 'be', 'uk', 'ru', 'en' }
+// → Set {
+//     { name: 'be-tarask', fallback: [ [Object], [Object] ] },
+//     { name: 'be', fallback: [ [Object], [Object] ] },
+//     { name: 'uk', fallback: [ [Object], [Object] ] },
+//     { name: 'ru', fallback: [ [Object] ] },
+//     { name: 'en', fallback: [] } }
 ````
 
 ## Exported API
@@ -51,7 +52,7 @@ Return value:
 
  *  `Array<Node>` — flat array of vertices.
 
-### Default export
+### Export `flatten`
 
  >  Flattens directed graph or forest starting from given vertex.
 
