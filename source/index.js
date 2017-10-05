@@ -15,18 +15,18 @@
 export type ChildrenGetter<Graph, Vertex> = (graph: Graph, vertex: Vertex) => Array<Vertex>;
 
 /**
- * Flattens directed graph or forest starting from given vertex.
+ * Flattens cyclic graph starting from root vertex.
  * @param {Graph} graph — graph or forest.
- * @param {Vertex} entry — vertex to start search.
- * @param {ChildrenGetter<Graph, Vertex>} childrenGetter — returns children of the given vertex.
+ * @param {Vertex} root — vertex to start search.
+ * @param {ChildrenGetter<Graph, Vertex>} getChildren — returns children of the given vertex.
  * @return {Set<Vertex>} — flat set of vertices.
  */
-export const flatten = <Graph, Vertex>(graph: Graph, entry: Vertex, childrenGetter: ChildrenGetter<Graph, Vertex>) => {
-    const queue: Array<Vertex> = [entry];
+export const flatten = <Graph, Vertex>(graph: Graph, root: Vertex, getChildren: ChildrenGetter<Graph, Vertex>) => {
+    const queue: Array<Vertex> = [root];
     const visited: Set<Vertex> = new Set(queue);
 
     do {
-        for (const node of childrenGetter(graph, queue.shift())) {
+        for (const node of getChildren(graph, queue.shift())) {
             if (!visited.has(node)) {
                 visited.add(node);
                 queue.push(node);

@@ -54,7 +54,7 @@ Return value:
 
 ### Export `flatten`
 
- >  Flattens directed graph or forest starting from given vertex.
+ >  Flattens cyclic graph starting from root vertex.
 
 Generic params:
 
@@ -64,8 +64,8 @@ Generic params:
 Params:
 
  *  `graph: Graph` — graph or forest.
- *  `entry: Vertex` — vertex to start search.
- *  `childrenGetter: ChildrenGetter<Graph, Vertex>` — returns children
+ *  `root: Vertex` — vertex to start search.
+ *  `getChildren: ChildrenGetter<Graph, Vertex>` — returns children
     of the given vertex.
 
 Return value:
