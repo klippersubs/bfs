@@ -43,19 +43,4 @@ module.exports = {
         'no-irregular-whitespace': 'off',
         'flowtype/no-types-missing-file-annotation': 'off',
     },
-    overrides: [
-        {
-            files: ['./source/**/*.test.js'],
-            env: {
-                browser: true,
-                commonjs: true,
-                es6: true,
-                node: true,
-                jest: true,
-            },
-            globals: {
-                test: true,
-            },
-        },
-    ],
 };
